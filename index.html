@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do Task</title>
+
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrab 5 CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/0a9ca5a95a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main class="">
+      <img src="img/logo.png" class="logo" />
+      <button
+        id="loginBtn"
+        class="btn"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Sign-Up / Login
+      </button>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img
+              src="./img/landing organizer.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h1>
+                Build your team's perfect<br />
+                online task manager
+              </h1>
+              <p>
+                Plan, manage and track all your team's tasks in one flexible
+                software. What would you like to manage with Orgnized-task.com
+                Work OS?
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./img/landing 2.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1>Organize your work and life, finally.</h1>
+              <p>Add your tasks. Organize your life. Achieve more every day.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./img/pexels-pavel-danilyuk-9143840.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h1>
+                Make work <br />
+                work for you.
+              </h1>
+              <p>
+                From the small stuff to the big picture, organize your work so
+                your team know what to do, why it matters, and how to get it
+                done.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <button
+        id="getStartedBtn"
+        class="btn"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Get started
+      </button>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog w-75 mw-100 modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <div id="dforms">
+                <form id="lform" class="forms">
+                  <h2>Login</h2>
+                  <input type="text" class="ihide" />
+                  <input
+                    type="email"
+                    placeholder="Email "
+                    id="LEmail"
+                    class="finput"
+                    required
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    id="LPass"
+                    class="finput"
+                    required
+                  />
+                  <input type="text" class="ihide" />
+                  <button class="fbtn" id="lbtn">Log in</button>
+                </form>
+                <form id="sform" class="forms">
+                  <h2>Sign Up</h2>
+                  <input
+                    type="text"
+                    name="firstname"
+                    placeholder="First name"
+                    class="finput"
+                    id="sfname"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="Lastname"
+                    placeholder="Last name"
+                    class="finput"
+                    id="slname"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    class="finput"
+                    id="semail"
+                    required
+                  />
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    class="finput"
+                    id="spass"
+                    minlength="6"
+                    required
+                  />
+                  <button class="fbtn" id="sbtn">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Js main  -->
+    <script src="./main.js"></script>
+
+    <!-- Bootstrab 5 CDN  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
